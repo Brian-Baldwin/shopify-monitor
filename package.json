@@ -1,0 +1,33 @@
+{
+  "name": "pokemon-restock-monitor",
+  "version": "1.0.0",
+  "description": "Monitor Shopify Pokemon products on princedist.com for restocks",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "monitor": "ts-node src/monitor.ts",
+    "init-db": "ts-node src/database/init.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "shopify",
+    "pokemon",
+    "restock",
+    "monitor"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "https-proxy-agent": "^5.0.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
